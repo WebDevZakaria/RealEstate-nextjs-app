@@ -104,7 +104,9 @@ const Navbar = () => {
                  href='/properties/add'
                 className= {`${pathname === '/properties/add' ? 'bg-black': ''} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 `}                
                  >
-                Add Property
+
+                أضف عقارك للكراء
+
                 </Link>
                 )}
               
@@ -203,6 +205,9 @@ className='block px-4 py-2 text-sm text-gray-700'
 role='menuitem'
 tabIndex='-1'
 id='user-menu-item-0'
+onClick={() =>{
+  setIsProfileMenuOpen(false)
+}}
 >
 Your Profile
 </Link>
@@ -212,16 +217,22 @@ className='block px-4 py-2 text-sm text-gray-700'
 role='menuitem'
 tabIndex='-1'
 id='user-menu-item-2'
+onClick={() =>{
+  setIsProfileMenuOpen(false)
+}}
 >
 Saved Properties
 </Link>
-<button
+<button onClick={() => {
+setIsProfileMenuOpen(false);
+signOut()}}
+
 className='block px-4 py-2 text-sm text-gray-700'
 role='menuitem'
 tabIndex='-1'
 id='user-menu-item-2'
 >
-Sign Out
+  تسجيل الخروج
 </button>
 </div>
 
