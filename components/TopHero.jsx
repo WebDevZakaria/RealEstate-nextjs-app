@@ -51,7 +51,7 @@ className="absolute inset-0 object-cover w-full h-full"
 
 
             </h2>
-            <p className="text-base text-purple-500 md:text-[25px]">
+            <p className="text-[20px] text-purple-500 md:text-[25px]">
             قل وداعًا لمتاعب البحث عن منزل - اعثر على مكان الإيجار المثالي بسهولة!            
             </p>
           </div>
