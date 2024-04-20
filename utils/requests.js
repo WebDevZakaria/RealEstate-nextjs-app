@@ -7,12 +7,11 @@ async function fetchProperties(){
     {
         //handle where the domain is not available yet
       
-      const res = await fetch ('http://localhost:3000/api/properties');
+      const res = await fetch ('http://localhost:3000/api/properties',{cache:'no-store'});
       
       if (!res.ok) 
       {
         throw new Error('failed to fetch data')
-  
       }
   
       return res.json()
@@ -20,8 +19,9 @@ async function fetchProperties(){
     }
   
     catch(error){
+
       console.log(error)
-  
+
     }
   
   }
