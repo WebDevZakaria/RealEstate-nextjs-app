@@ -71,15 +71,15 @@ const PropertyDetails = ({property}) => {
       >
         <p>
         <FaBed className="inline-block mr-2" /> {property.beds} {" "}
-          <span className="hidden sm:inline">Beds</span>
+          <span className="hidden sm:inline">سرير</span>
         </p>
         <p>
         <FaBath className="inline-block mr-2" /> {property.baths} {" "}
-          <span className="hidden sm:inline">Baths</span>
+          <span className="hidden sm:inline">حمامات</span>
         </p>
         <p>
         <FaRulerCombined className="inline-block mr-2" />
-        {property.square_feet} {" "} <span className="hidden sm:inline">sqft</span>
+        {property.square_feet} {" "} <span className="hidden sm:inline">مساحة</span>
         </p>
       </div>
       <p className="text-gray-500 mb-4 text-center">
