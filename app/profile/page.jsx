@@ -48,8 +48,32 @@ const page = () => {
     }
     },[session])
 
-    const handleDeleteProperty = () =>{
-      
+    const handleDeleteProperty = async (propertyId) =>{
+
+      const confirmed = window.confirm('Are you sure you want to delete this property?')
+      if(!confirmed) return;
+
+      try{
+
+        const res = await fetch(`/api/properties/${propertyId}`,{method:'DELETE'})
+
+        if(res.status === 200){
+          const updatedProperties = properties.filter((property) =>property._id !== propertyId)
+          setProperties(updatedProperties)
+          alert('Property deleted')
+          
+        }else {
+          alert('failed to delete')
+        }
+
+    
+      }catch(error){
+        console.log(error)
+        alert('failed to delete')
+      }
+
+
+
     }
 
 
