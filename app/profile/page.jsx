@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useSession } from "next-auth/react"
 import profileDefault from '@/assets/images/profile.png'
 import Spinner from "@/components/Spinner"
-
+import { toast } from "react-toastify"
 
 
 
@@ -60,19 +60,17 @@ const page = () => {
         if(res.status === 200){
           const updatedProperties = properties.filter((property) =>property._id !== propertyId)
           setProperties(updatedProperties)
-          alert('Property deleted')
+          toast.success('Property deleted')
           
         }else {
-          alert('failed to delete')
+          toast.error('failed to delete')
         }
 
     
       }catch(error){
         console.log(error)
-        alert('failed to delete')
+        toast.error('failed to delete')
       }
-
-
 
     }
 
