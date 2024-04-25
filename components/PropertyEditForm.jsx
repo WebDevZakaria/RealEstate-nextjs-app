@@ -141,19 +141,19 @@ const handleSubmit = async (e) =>{
 
     const formData = new FormData(e.target)
    const res = await fetch(
-  `api/properties/${id}`,
+  `/api/properties/${id}`,
    {
     method:'PUT',
     body:formData
   })
 
   if(res.status ===200){
-    router.push(`properties/${id}`)
+    router.push(`/properties/${id}`)
   }else if(res.status ===401 || res.status ===403)
   {
     toast.error('permission denied')
   }else {
-    toast.error('somthing went wrong')
+    toast.error('kayna haja')
 
   }
 
@@ -189,6 +189,7 @@ const handleSubmit = async (e) =>{
         value={fields.type}
         onChange={handleChange}
       >
+
         <option value="Apartment">شقة</option>
         <option value="Condo">Condo</option>
         <option value="House">منزل أرضي</option>
@@ -196,6 +197,8 @@ const handleSubmit = async (e) =>{
         <option value="Room">غرفة</option>
         <option value="Studio">استوديو</option>
         <option value="Other">آخر</option>
+
+
       </select>
     </div>
     <div className="mb-4">

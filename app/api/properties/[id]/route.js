@@ -78,12 +78,16 @@ export const GET = async (request, { params }) => {
       const formData = await request.formData();
   
       // Access all values from amenities 
+
       const amenities = formData.getAll('amenities');
+
       // get property to update
+
       const existingProperty = await Property.findById(id)
       if(!existingProperty) {
         return new Response('property dont exist' ,{status:404})
       }
+      
       //verify ownership 
 
       if(existingProperty.owner.toString() !== userId){
