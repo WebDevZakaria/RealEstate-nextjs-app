@@ -8,7 +8,7 @@ const HomeProperties = async () => {
 
   const data = await fetchProperties();
 
-  const recentProperties = data.sort(() => Math.random() - Math.random()).slice(0, 5);
+  const recentProperties = data.sort(() => Math.random() - Math.random()).slice(0, 6);
 
   return (
      <>   
