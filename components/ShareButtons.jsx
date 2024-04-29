@@ -16,6 +16,8 @@ const ShareButtons = ({property}) => {
 
     </h3>
     <div className="flex gap-3 justify-center pb-5">
+
+
       <FacebookShareButton
        url = {shareUrl} 
        quote = {property.name}
@@ -33,6 +35,7 @@ const ShareButtons = ({property}) => {
       >
         <TwitterIcon size = {40} round = {true} />
       </TwitterShareButton>
+
 
 
       <WhatsappShareButton
@@ -54,8 +57,6 @@ const ShareButtons = ({property}) => {
       >
         <EmailIcon size = {40} round = {true} />
       </EmailShareButton>
-
-
 
 
     </div>
