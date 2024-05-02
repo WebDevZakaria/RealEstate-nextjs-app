@@ -4,7 +4,7 @@ import HomeProperties from "@/components/HomeProperties"
 import Features from "@/components/Features"
 import TopHero from "@/components/TopHero"
 import FeaturedProperty from "@/components/FeaturedProperty"
-
+import WhyThisWebsite from "@/components/WhyThisWebsite"
 
 const HomePage =  () => {
 
@@ -19,6 +19,7 @@ const HomePage =  () => {
       <FeaturedProperty />
       <HomeProperties />
       <Features />
+      <WhyThisWebsite />
  
     </>
 
