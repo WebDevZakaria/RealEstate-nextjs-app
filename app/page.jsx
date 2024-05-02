@@ -3,6 +3,8 @@ import InfoBoxes from "@/components/InfoBoxes"
 import HomeProperties from "@/components/HomeProperties"
 import Features from "@/components/Features"
 import TopHero from "@/components/TopHero"
+import FeaturedProperty from "@/components/FeaturedProperty"
+
 
 const HomePage =  () => {
 
@@ -14,6 +16,7 @@ const HomePage =  () => {
       <TopHero />
       <Hero />
       <InfoBoxes />
+      <FeaturedProperty />
       <HomeProperties />
       <Features />
  

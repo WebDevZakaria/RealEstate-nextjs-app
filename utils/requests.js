@@ -1,13 +1,14 @@
 //const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null
 
-async function fetchProperties(){
+async function fetchProperties({showFeatured = false} = {}){
 
     try
 
     {
         //handle where the domain is not available yet
       
-      const res = await fetch ('http://localhost:3000/api/properties',{cache:'no-store'});
+      const res = await fetch (`http://localhost:3000/api/properties${showFeatured ? '/featured' : ''}`,{cache:'no-store'});
+
       
       if (!res.ok) 
       {
