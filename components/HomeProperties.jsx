@@ -8,7 +8,7 @@ const HomeProperties = async () => {
 
   const data = await fetchProperties();
 
-  const recentProperties = data.sort(() => Math.random() - Math.random()).slice(0, 6);
+  const recentProperties = data.properties.sort(() => Math.random() - Math.random()).slice(0, 6);
 
   return (
      <>   
@@ -22,10 +22,13 @@ const HomeProperties = async () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
         {recentProperties === 0 ? (
+          
             <p> لم يتم العثور على شيء</p>
         ):
             recentProperties.map((property) => (
+
                 <PropetyCard key={property._id} property = {property} />
+
 
             ))}
       

@@ -16,7 +16,7 @@ const Footer = () => {
     
       <div>
         <p className="text-sm text-gray-500 mt-2 md:mt-0">
-          &copy; {currentYear} PropertyPulse. All rights reserved.
+          &copy; {currentYear} ZedProperty. كل الحقوق محفوظة.
         </p>
       </div>
     </div>

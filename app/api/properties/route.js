@@ -13,10 +13,29 @@ export const GET = async(request) => {
 
         await connectDB();
 
-        const properties =  await Property.find({})
+        const page = request.nextUrl.searchParams.get('page') || 1
+        const pageSize = request.nextUrl.searchParams.get('pageSize') || 3
 
-        return new Response(JSON.stringify(properties),{
+
+        const skip = (page - 1) * pageSize
+        const total = await Property.countDocuments({})
+       // console.log(totalProperties)
+
+
+
+
+
+        const properties =  await Property.find({}).skip(skip).limit(pageSize)
+
+        const result = {
+          total,
+          properties
+        }
+
+        return new Response(JSON.stringify(result),{
+
             status:200,
+            
         })   
         
     }
