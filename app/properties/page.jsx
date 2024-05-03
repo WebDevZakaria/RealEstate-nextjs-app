@@ -4,6 +4,8 @@ import { useState,useEffect } from 'react';
 import PropetyCard from '@/components/PropetyCard'
 import { fetchProperties } from "@/utils/requests";
 
+import Pagination from '@/components/Pagination';
+
 import Hero from '@/components/Hero';
 
 
@@ -15,7 +17,7 @@ const PropertyPage = async () => {
   const [loading,setLoading] = useState(true)
 
   const [page,setPage] = useState(1)
-  const [pageSize,setPageSize] = useState(3)
+  const [pageSize,setPageSize] = useState(6)
   const [totalItems,setTotalItems] = useState(0) 
 
 
@@ -49,7 +51,12 @@ const PropertyPage = async () => {
 
 
 
-  },[])
+  },[page,pageSize])
+
+  const handlePageChange = (newPage) =>{
+    setPage(newPage)
+
+  }
 
 
 
@@ -82,6 +89,7 @@ const PropertyPage = async () => {
         </div>
 
       )}
+      <Pagination page = {page}  pageSize = {pageSize} totalItems = {totalItems} onPageChange = {handlePageChange} /> 
         </div>
         </section>
   )
