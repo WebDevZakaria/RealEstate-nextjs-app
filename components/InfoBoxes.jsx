@@ -1,4 +1,4 @@
-import InfoBox from "./infoBox"
+import InfoBox from "./InfoBox";
 
 const InfoBoxes = () => {
 
@@ -24,6 +24,7 @@ const InfoBoxes = () => {
       heading = 'لأصحاب العقارات'
       backgroundColor = 'bg-purple-100'
       buttonInfo = {{
+
         text:'إضافة عقارك',
         link:'/properties/add',
         backgroundColor:'bg-purple-500'
@@ -39,4 +40,4 @@ const InfoBoxes = () => {
   )
 }
 
-export default InfoBoxes
+export default InfoBoxes;
