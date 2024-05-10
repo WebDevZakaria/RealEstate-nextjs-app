@@ -142,7 +142,6 @@ const PropertyAddForm = () => {
         onChange={handleChange}
       >
         <option value="شقة">شقة</option>
-        <option value="Condo">Condo</option>
         <option value="منزل أرضي">منزل أرضي</option>
         <option value="المقصورة أو الكوخ">المقصورة أو الكوخ</option>
         <option value="غرفة">غرفة</option>
@@ -159,7 +158,7 @@ const PropertyAddForm = () => {
         id="name"
         name="name"
         className="border rounded w-full py-2 px-3 mb-2"
-        placeholder="eg. Beautiful Apartment In Miami"
+        placeholder="على سبيل المثال. شقة جميلة في عنابة"
         required
         value={fields.name}
         onChange={handleChange}
@@ -176,7 +175,7 @@ const PropertyAddForm = () => {
         name="description"
         className="border rounded w-full py-2 px-3"
         rows="4"
-        placeholder="Add an optional description of your property"
+        placeholder="أضف وصفًا لممتلكاتك"
         value={fields.description}
         onChange={handleChange}
       ></textarea>
@@ -189,7 +188,7 @@ const PropertyAddForm = () => {
         id="street"
         name="location.street"
         className="border rounded w-full py-2 px-3 mb-2"
-        placeholder="Street"
+        placeholder="الحي"
         value={fields.location.street}
         onChange={handleChange}
       />
@@ -198,7 +197,7 @@ const PropertyAddForm = () => {
         id="city"
         name="location.city"
         className="border rounded w-full py-2 px-3 mb-2"
-        placeholder="City"
+        placeholder="البلدية"
         required
         value={fields.location.city}
         onChange={handleChange}
@@ -209,7 +208,7 @@ const PropertyAddForm = () => {
         id="state"
         name="location.state"
         className="border rounded w-full py-2 px-3 mb-2"
-        placeholder="State"
+        placeholder="الولاية"
         required
         value={fields.location.state}
         onChange={handleChange}
@@ -219,7 +218,7 @@ const PropertyAddForm = () => {
         id="zipcode"
         name="location.zipcode"
         className="border rounded w-full py-2 px-3 mb-2"
-        placeholder="Zipcode"
+        placeholder="الرمز البريدي"
         value={fields.location.zipcode}
         onChange={handleChange}
       />
@@ -521,7 +520,7 @@ const PropertyAddForm = () => {
         id="seller_name"
         name="seller_info.name"
         className="border rounded w-full py-2 px-3"
-        placeholder="Name"
+        placeholder="الاسم"
         value={fields.seller_info.name}
             onChange={handleChange}
       />
@@ -538,7 +537,7 @@ const PropertyAddForm = () => {
         id="seller_email"
         name="seller_info.email"
         className="border rounded w-full py-2 px-3"
-        placeholder="Email address"
+        placeholder="البريد الالكتروني"
         required
         value={fields.seller_info.email}
         onChange={handleChange}
@@ -555,7 +554,7 @@ const PropertyAddForm = () => {
         id="seller_phone"
         name="seller_info.phone"
         className="border rounded w-full py-2 px-3"
-        placeholder="Phone"
+        placeholder="رقم الهاتف"
         value={fields.seller_info.phone}
         onChange={handleChange}
       />
@@ -582,7 +581,7 @@ const PropertyAddForm = () => {
         className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
         type="submit"
       >
-        Add Property
+        أضف العقار
       </button>
     </div>
   </form>

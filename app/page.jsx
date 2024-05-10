@@ -5,6 +5,7 @@ import Features from "@/components/Features"
 import TopHero from "@/components/TopHero"
 import FeaturedProperty from "@/components/FeaturedProperty"
 import WhyThisWebsite from "@/components/WhyThisWebsite"
+import FAQ from "@/components/FAQ"
 
 const HomePage =  () => {
 
@@ -20,6 +21,7 @@ const HomePage =  () => {
       <HomeProperties />
       <Features />
       <WhyThisWebsite />
+      <FAQ />
  
     </>
 

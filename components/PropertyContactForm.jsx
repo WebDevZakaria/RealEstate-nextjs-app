@@ -97,13 +97,13 @@ wasSubmitted ?(
       className='block text-gray-700 text-sm font-bold mb-2'
       htmlFor='name'
     >
-      Name:
+      الاسم:
     </label>
     <input
       className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
       id='name'
       type='text'
-      placeholder='Enter your name'             
+      placeholder='أدخل أسمك'             
       required
       value={name}
       onChange={(e) =>setName(e.target.value)}
@@ -115,13 +115,13 @@ wasSubmitted ?(
         className="block text-gray-700 text-sm font-bold mb-2"
         htmlFor="email"
       >
-        Email:
+البريد الإلكتروني:
       </label>
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         id="email"
         type="email"
-        placeholder="Enter your email"
+        placeholder="أدخل بريدك الإلكتروني"
         required
         value={email}
         onChange={(e) =>setEmail(e.target.value)}
@@ -132,13 +132,13 @@ wasSubmitted ?(
         className='block text-gray-700 text-sm font-bold mb-2'
         htmlFor='phone'
       >
-        Phone:
+        رقم الهاتف:
       </label>
       <input
         className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
         id='phone'
         type='text'
-        placeholder='Enter your phone number'
+        placeholder='أدخل رقم هاتفك'
         value={phone}
         onChange={(e) =>setPhone(e.target.value)}
       />
@@ -148,12 +148,12 @@ wasSubmitted ?(
         className="block text-gray-700 text-sm font-bold mb-2"
         htmlFor="message"
       >
-        Message:
+        الرسالة:
       </label>
       <textarea
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
         id="message"
-        placeholder="Enter your message"
+        placeholder="أدخل رسالتك"
 
         value={message}
         onChange={(e) =>setMessage(e.target.value)}
@@ -164,7 +164,7 @@ wasSubmitted ?(
         className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline flex items-center justify-center"
         type="submit"
       >
-        <FaPaperPlane className="mr-2" /> Send Message
+        <FaPaperPlane className="mr-2" /> أرسل الرسالة
       </button>
     </div>
   </form>

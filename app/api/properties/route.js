@@ -14,16 +14,14 @@ export const GET = async(request) => {
         await connectDB();
 
         const page = request.nextUrl.searchParams.get('page') || 1
-        const pageSize = request.nextUrl.searchParams.get('pageSize') || 6
 
+        const pageSize = request.nextUrl.searchParams.get('pageSize') || 6
+        
 
         const skip = (page - 1) * pageSize
         const total = await Property.countDocuments({})
+
        // console.log(totalProperties)
-
-
-
-
 
         const properties =  await Property.find({}).skip(skip).limit(pageSize)
 

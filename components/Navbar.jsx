@@ -125,7 +125,7 @@ const Navbar = () => {
 
  <button onClick={() =>signIn(provider.id)} key={index}  className='flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'>
  <FaGoogle className='text-white mr-2' />
- <span>Login or Register</span>
+ <span>تسجيل الدخول</span>
 </button>
               ))}
              
@@ -209,7 +209,7 @@ onClick={() =>{
   setIsProfileMenuOpen(false)
 }}
 >
-Your Profile
+ملفك الشخصي
 </Link>
 <Link
 href='properties/saved'
@@ -221,7 +221,7 @@ onClick={() =>{
   setIsProfileMenuOpen(false)
 }}
 >
-Saved Properties
+العقارات المحفوظة
 </Link>
 <button onClick={() => {
 setIsProfileMenuOpen(false);

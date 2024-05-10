@@ -60,7 +60,7 @@ className="absolute inset-0 object-cover w-full h-full"
               type="submit"
               className="inline-flex items-center justify-center h-14 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-500 hover:bg-purple-600 focus:shadow-outline focus:outline-none"
             >
-              Get started
+              ابدأ الأن
             </button>
             <a
               href="/"

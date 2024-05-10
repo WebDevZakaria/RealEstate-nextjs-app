@@ -10,7 +10,7 @@ const WhyThisWebsite = () => {
       class="block  bg-whit">
       <div class="flex flex-wrap items-center">
         <div class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12">
-          <img src='https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg' alt="Why US"
+          <img src='https://i.pinimg.com/564x/3c/c0/59/3cc059ad9949351944752e8d023b1427.jpg' alt="Why US"
         
             class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" />
 
