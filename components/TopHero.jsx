@@ -80,7 +80,7 @@ className="absolute inset-0 object-cover w-full h-full"
             قل وداعًا لمتاعب البحث عن منزل - اعثر على مكان الإيجار المثالي بسهولة!            
             </p>
           </div>
-          <div className="flex items-center sm:justify-center mx-[140px]">
+          <div className="flex items-center sm:justify-center mx-[70px]">
 
           {!session && (
 
