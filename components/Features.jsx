@@ -22,7 +22,7 @@ const Features = () => {
       </h2>
       </div>
 
-  <div className='flex lg:mx-[130px] mt-[80px] flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px]'>
+  <div className='flex lg:mx-[130px] mt-[80px] flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px] ml-[-60px]'>
 
    
         <div>
