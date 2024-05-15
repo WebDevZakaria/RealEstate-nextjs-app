@@ -22,12 +22,11 @@ const Features = () => {
       </h2>
       </div>
 
-  <div className='flex lg:mx-[130px] mt-[80px] flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px] ml-[-60px]'>
+  <div className='flex lg:mx-[210px] mt-[80px] flex-col gap-y-[30px] lg:flex-row lg:gap-x-[30px]'>
 
    
-        <div>
 
-          <div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center  ml-[150px] p-[65px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
+          <div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center p-[65px] ml-[50px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
 
             <div className='mb-6'>
 
@@ -42,13 +41,11 @@ const Features = () => {
 
            
 
-          </div>
 
         </div>
 
-<div>
 
-<div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center  ml-[150px] p-[65px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
+<div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center ml-[50px] p-[65px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
 
   <div className='mb-6'>
   <AiFillPhone  className='mx-auto w-[160px] h-[50px]' />
@@ -64,11 +61,10 @@ const Features = () => {
 
 
 </div>
-</div>
 
 
-<div>
-<div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center  ml-[150px] p-[65px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
+
+<div  className={`w-[350px] h-[350px]  flex flex-col justify-center items-center ml-[50px] p-[65px] text-center rounded-[12px] cursor-pointer transition-all bg-white shadow-2xl hover:bg-purple-600/20`}>
   <div className='mb-6'>
 
   <AiFillBank  className='mx-auto w-[160px] h-[50px]' />
@@ -84,7 +80,7 @@ const Features = () => {
 
 
 </div>
-</div>
+
 
 
 
